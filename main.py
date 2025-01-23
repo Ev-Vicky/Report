@@ -23,7 +23,7 @@ def home():
     # Check if the user is already logged in
     if 'username' in session:
         return redirect(url_for('dashboard'))
-    return render_template('login.html')  # Displays the login form
+    return render_template('index.html')  # Displays the index form
 
 @app.route('/login', methods=['POST'])
 def login():
